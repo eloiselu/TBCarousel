@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.carousel {
+    width: 520px;
+    height: 280px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel ul {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 4000px;
+}
+
+.carousel ul li {
+    float: left;
+}
+
+.carousel ul li a img {
+    width: 520px;
+    height: 280px;
+}
+
+.carousel ol {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    margin-left: -40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.carousel ol li {
+    float: left;
+    width: 9px;
+    height: 9px;
+    margin: 3px;
+    border-radius: 5px;
+    background: #b7b7b7;
+    cursor: pointer;
+}
+
+.carousel ol li.current {
+    background: #ff4e1c;
+}
+
+.carousel i {
+    font-family:"iconfont";
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 30px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    background: rgba(80, 80, 80, 0.3);
+    cursor: pointer;
+    user-select: none;//防止文字双击被选中
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    display: none;
+}
+
+.carousel .carLeft {
+    left: 0px;
+}
+
+.carousel .carRight {
+    right: 0px;
+}
+
